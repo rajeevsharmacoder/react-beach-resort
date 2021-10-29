@@ -5,7 +5,6 @@ import Client from './Contentful';
 
 
 const RoomContext = React.createContext();
-{/* <RoomContext.Provider value={}></RoomContext.Provider> */}
 class RoomProvider extends Component {
     state = {
         rooms: [],

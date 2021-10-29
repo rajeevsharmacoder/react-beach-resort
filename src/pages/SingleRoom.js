@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import defaultBcg from '../images/room-1.jpeg';
-import Hero from '../components/Hero';
+// import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import { RoomContext } from '../context';
@@ -23,7 +23,7 @@ export default class SingleRoom extends Component {
     // }
     
     render() {
-        const charge = 7.5;
+        let charge = 7.5;
         const getTariff = () => {
             fetch('http://api.currencylayer.com/live?access_key=b2ac9cdf32ab43c4d02400992a0e0580')
             .then(response => response.json())
